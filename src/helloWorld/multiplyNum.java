@@ -1,9 +1,17 @@
 package helloWorld;
 
 public class multiplyNum {
-	void five(){
-		for(int i = 1; i<=10; i+=1) {
-			System.out.printf("%d * %d = %d", 5, i, 5*i).println();
-		}
+    void multiply() { // if void value
+	multiply(5); // default value
+    }
+
+    void multiply(int tableParams) { // if one parameter is provided
+	multiply(tableParams, 1, 10);
+    }
+
+    void multiply(int tableParams, int start, int end) { // if 3 parameters is provided
+	for (int i = start; i <= end; i += 1) {
+	    System.out.printf("%d * %d = %d", tableParams, i, tableParams * i).println();
 	}
+    }
 }
